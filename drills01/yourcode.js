@@ -1,6 +1,7 @@
 
-function sumArray(){
-	
+function sumArray(nums){
+  const sum = nums.reduce((accumulator, num) => accumulator + num);
+  return sum;
 }
 
 function fitWithinVal(){
