@@ -20,6 +20,7 @@ function fitWithinVal(nums, targetSum){
 
 function getAllNamesShorterThan(){
   //test commit comment
+  //test commit #2, committing from VS Code
 }
 
 function makeLabel(){
