@@ -4,8 +4,18 @@ function sumArray(nums){
   return sum;
 }
 
-function fitWithinVal(){
+function fitWithinVal(nums, targetSum){
+  let sum = 0;
+  let output = [];
 
+  for(let i = 0 ; i < nums.length; i++) {
+    if (sum + nums[i] > targetSum) {
+      continue;
+    }
+    sum += nums[i];
+    output.push(nums[i]);
+  }
+  return output;
 }
 
 function getAllNamesShorterThan(){
