@@ -18,9 +18,9 @@ function fitWithinVal(nums, targetSum){
   return output;
 }
 
-function getAllNamesShorterThan(){
-  //test commit comment
-  //test commit #2, committing from VS Code
+function getAllNamesShorterThan(names, charCeiling){
+  const filteredNames = names.filter(name => name.length < charCeiling);
+  return filteredNames;
 }
 
 function makeLabel(){
