@@ -23,6 +23,11 @@ function getAllNamesShorterThan(names, charCeiling){
   return filteredNames;
 }
 
-function makeLabel(){
+function makeLabel(person){
+  const address = person['home address'];
+  const label = `${person.greeting} ${person.givenName} ${person.familyName}\n` +
+    `${address.streetNumber} ${address.streetName}\n` +
+    `${address.city}, ${address.state} ${address.zip}`;
 
+  return label;
 }
