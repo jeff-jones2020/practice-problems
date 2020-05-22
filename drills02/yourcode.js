@@ -5,8 +5,9 @@ function countOccurences(wordArray, target){
   return count;
 }
 
-function wordLengths(){
-
+function wordLengths(words){
+  const output = words.map(item => item.length);
+  return output;
 }
 
 function getMinMaxMean(){
