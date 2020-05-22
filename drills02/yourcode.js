@@ -10,7 +10,20 @@ function wordLengths(words){
   return output;
 }
 
-function getMinMaxMean(){
+function getMinMaxMean(nums){
+  let output = {min: nums[0], max: nums[0], mean: null}
+  let sum = 0;
+  let count = 0;
+
+  nums.forEach( num => {
+    output.min = num < output.min ? num : output.min;
+    output.max = num > output.max ? num : output.max;
+    sum += num;
+    count++;
+  })
+  output.mean = sum / count;
+
+  return output;
 
 }
 
