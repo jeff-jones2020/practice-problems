@@ -27,6 +27,20 @@ function getMinMaxMean(nums){
 
 }
 
-function findMode(){
+function findMode(nums){
+  const foundNums = {winner: nums[0], winnerAmount: 1};
 
+  nums.forEach(num => {
+    if (foundNums[num] === undefined) {
+      foundNums[num] = 1;
+    } else {
+      foundNums[num]++;
+    }
+    if(foundNums[num] > winnerAmount) {
+      foundNums.winner = num;
+      foundNums.winnerAmount = foundNums[num];
+    }
+  })
+
+  return foundNums.winner;
 }
